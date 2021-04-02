@@ -1,0 +1,3 @@
+include ':progressbars'
+include ':app'
+rootProject.name = "TestLib"
