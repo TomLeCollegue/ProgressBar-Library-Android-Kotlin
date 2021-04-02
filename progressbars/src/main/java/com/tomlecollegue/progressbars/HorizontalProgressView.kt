@@ -20,6 +20,9 @@ class HorizontalProgressView @JvmOverloads constructor(
     private var viewWidth: Float = 0.0f
     private var viewHeight: Float = 0.0f
 
+    private var defaultProgressColor = Color.parseColor("#55E552")
+    private var defaultBackGroundColor = Color.parseColor("#EFEFEF")
+
     private val DP_IN_PX = Resources.getSystem().displayMetrics.density
     private val DEFAULT_PROGRESS_STROKE_WIDTH = 16 * DP_IN_PX
     private var strokeWithProgress = DEFAULT_PROGRESS_STROKE_WIDTH
@@ -58,8 +61,8 @@ class HorizontalProgressView @JvmOverloads constructor(
         isClickable = true
 
         val typedArray = context.obtainStyledAttributes(attrs,R.styleable.Progress)
-        val colorBackground= typedArray.getColor(R.styleable.Progress_colorBackground, Color.GRAY)
-        val colorProgress= typedArray.getColor(R.styleable.Progress_colorProgress, Color.GREEN)
+        val colorBackground= typedArray.getColor(R.styleable.Progress_colorBackground, defaultBackGroundColor)
+        val colorProgress= typedArray.getColor(R.styleable.Progress_colorProgress, defaultProgressColor)
         val progressDefault = typedArray.getInteger(R.styleable.Progress_defaultValue, 0)
         strokeWithProgress = typedArray.getDimension(R.styleable.Progress_strokeWidth, DEFAULT_PROGRESS_STROKE_WIDTH)
 
