@@ -15,7 +15,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="16dp"
         android:layout_marginEnd="32dp"
-        app:defaultValue="50"
+        app:defaultValue="16"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -23,12 +23,12 @@
     <com.tomlecollegue.progressbars.CircleProgressView
         android:layout_width="250dp"
         android:layout_height="250dp"
-        app:defaultValue="50"
+        app:defaultValue="69"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:strokeWidth="25dp"/>
+        app:strokeWidth="16dp"/>
 
 
 
